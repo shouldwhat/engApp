@@ -7,15 +7,16 @@
 </style>
 <script>
 	function test(){
-		var str = 0;
-		alert("버튼클릭");
+
+		var textObj = document.getElementById('tb_value');
+		console.log(textObj.value);
 	}
 </script>
 </head>
 <body>
 	<form>
-		<INPUT id='tb' type='TEXTBOX' value='' onclick='test()'>
-		<INPUT type='BUTTON' value='버튼' onclick='test()'>
+		<input id='tb_value' type='text' value='' />
+		<input type='button' value='버튼' onclick='javascript:test()' />
 	</form>
 </body>
 </html>
